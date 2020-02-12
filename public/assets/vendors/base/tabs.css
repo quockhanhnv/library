@@ -1,0 +1,83 @@
+﻿body{
+	font: normal 12px arial;
+}
+.lc{
+	width: 150px;
+	font: bold 12px Tahoma;
+	text-align: right;
+}
+
+
+
+.indentmenu{
+	font: bold 12px Tahoma;
+	width: 100%; /*leave this value as is in most cases*/
+	margin: 0 auto;
+}
+
+.indentmenu ul{
+	margin: 0;
+	padding: 0;
+	float: left;
+	/* width: 80%; width of menu*/
+	border-top: 1px solid navy; /*navy border*/
+	background: black url(indentbg.gif) center center repeat-x;
+}
+
+.indentmenu ul li{
+	display: inline;
+}
+
+.indentmenu ul li a{
+	float: left;
+	color: white; /*text color*/
+	padding: 5px 11px;
+	text-decoration: none;
+	border-right: 1px solid navy; /*navy divider between menu items*/
+}
+
+.indentmenu ul li a:visited{
+	color: white;
+}
+
+.indentmenu ul li a.selected{
+	color: white !important;
+	padding-top: 6px; /*shift text down 1px*/
+	padding-bottom: 4px;
+	background: black url(indentbg2.gif) center center repeat-x;
+}
+
+.tabcontentstyle{border:1px solid gray; min-width:980px; height: auto; padding: 5px; margin-bottom:1em}
+
+.tabcontent{
+	display:none;
+}
+.tabcontent table{
+	width: 100%; font-size: 12px;
+	border-left: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+}
+.tabcontent table td, .tabcontent table th{
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 6px 5px;
+}
+.tabcontent table th{background: #44f; color: #fff;}
+.tabcontent table .s, .tabcontent table .c, .tabcontent table .t{
+	height: 100px;
+}
+.datecell{
+	text-align: justify; min-width: 120px;
+	line-height: 20px;
+}
+.datecell:hover{
+	background: #aff;
+	color: #44f;
+}
+
+
+@media print {
+	.tabcontent {
+		display:block !important;
+	}
+}

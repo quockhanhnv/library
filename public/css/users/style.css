@@ -1,0 +1,27 @@
+.avt {
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+}
+
+#btnadd {
+	padding: 100px;
+}
+
+.active {
+	color: green;
+}
+
+.noneactive {
+	color: red;
+}
+
+.action {
+	overflow: visible;
+	position: relative;
+	width: 120px;
+}
+
+.pageoption {
+	width: 60px;
+}
